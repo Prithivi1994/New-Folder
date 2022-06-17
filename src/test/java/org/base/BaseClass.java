@@ -20,17 +20,7 @@ public class BaseClass {
 
 	WebDriver driver;
 
-	public void getDriver() {
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
-	}
-	public void getUrl(String url) {
-		driver.get(url);
-
-	}
-	public void manageWindow() {
-		driver.manage().window().maximize();
-	}
+	
 
 	public String getTitle() {
 		String title = driver.getTitle();
